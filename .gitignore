@@ -1,0 +1,44 @@
+# # Model weights — too large for GitHub
+# *.pth
+# *.pt
+# *.bin
+# model_only/
+# whisper_cache/
+
+# # Database — contains patient data
+# *.db
+
+# # Python cache
+# __pycache__/
+# *.pyc
+# .env
+
+
+
+# Model weights (upload separately — too large for git)
+*.pth
+*.h5
+*.pt
+model_only/
+
+# Database (regenerates on startup)
+*.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Whisper cache (downloaded at runtime)
+~/.cache/whisper/sehatrack_env/ 
+*.pth 
+*.h5 
+model_only/ 
+__pycache__/ 

@@ -1,0 +1,11 @@
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 200          # MB — allows large X-ray images
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"

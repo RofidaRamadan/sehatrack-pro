@@ -1,0 +1,50 @@
+# streamlit
+# torch
+# torchvision
+# transformers
+# opencv-python-headlessPillow
+# pandas
+# plotly
+# soundfile
+# openai-whisper
+
+
+
+
+# ── Core web framework ─────────────────────────────────────────────────────
+streamlit==1.35.0
+
+# ── PyTorch (CPU-only, much smaller — no CUDA needed on free tiers) ─────────
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# ── TensorFlow (CPU-only slim build) ──────────────────────────────────────
+tensorflow-cpu==2.15.1
+
+# ── HuggingFace NLP ────────────────────────────────────────────────────────
+transformers==4.40.2
+tokenizers==0.19.1
+
+# ── OpenAI Whisper (speech-to-text) ────────────────────────────────────────
+openai-whisper==20231117
+
+# ── Computer vision ────────────────────────────────────────────────────────
+opencv-python-headless==4.9.0.80
+Pillow==10.3.0
+
+# ── Explainability ─────────────────────────────────────────────────────────
+lime==0.2.0.1
+scikit-image==0.22.0
+scikit-learn==1.4.2
+
+# ── Data / plotting ────────────────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+plotly==5.22.0
+
+# ── Audio ──────────────────────────────────────────────────────────────────
+soundfile==0.12.1
+
+# ── Misc ───────────────────────────────────────────────────────────────────
+ffmpeg-python==0.2.0
