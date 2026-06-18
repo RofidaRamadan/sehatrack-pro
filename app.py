@@ -14,12 +14,11 @@ Unified Streamlit application combining:
   • Clinical logs with CSV export
   • Patient search
 """
-
-from download_models import download_all_weights
-download_all_weights()   
-
 import hashlib
 import io
+
+
+
 import json
 import os
 import sqlite3
@@ -30,14 +29,19 @@ from typing import Any, Dict, List, Optional, Tuple
 import cv2
 import numpy as np
 import pandas as pd
+import streamlit as st  # line 33
+import torch
 import plotly.express as px
 import plotly.graph_objects as go
 import soundfile as sf
-import streamlit as st
-import torch
 import torchvision.transforms as T
 import whisper
 from PIL import Image
+
+from download_models import download_all_weights
+download_all_weights()   
+
+
 
 from model import (
     DEVICE,
@@ -60,6 +64,8 @@ try:
 except ImportError:
     tf = None
     _TF_AVAILABLE = False
+
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE CONFIG & GLOBAL STYLES
